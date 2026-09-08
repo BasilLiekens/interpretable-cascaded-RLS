@@ -1,0 +1,28 @@
+# Signal parameters
+fs: 16000
+T: 10
+SNR: 0
+meas_SNR: 20
+SER: 0
+
+## Data settings
+audio_dir: "/path/to/directory"
+audio_source: "source_1"
+noise_source: "source_2"
+echo_source: "source_3"
+
+rir_dir: "/path/to/directory"
+subjectID: "subject"
+deviceID: "device"
+rep: 1
+
+source_direction: [90., 0.]
+noise_direction: [0., 0.]
+echo_direction: [180., 0.]
+rir_length: 160
+channels: [7, 3] # Outer vent and in-ear microphones
+
+## Simulation settings
+RLS_impl: "HRLS"
+lmbd:  0.9999
+L_sc: 10
